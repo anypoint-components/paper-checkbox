@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
   <title>paper-checkbox demo</title>
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../../shadycss/apply-shim.html">
-  <link rel="import" href="../../polymer/lib/elements/custom-style.html">
-  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-  <link rel="import" href="../../iron-form/iron-form.html">
-  <link rel="import" href="../paper-checkbox.html">
+  <script src="../../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module" src="../../../@webcomponents/shadycss/entrypoints/apply-shim.js"></script>
+  <script type="module" src="../../../@polymer/polymer/lib/elements/custom-style.js"></script>
+  <script type="module" src="../../../@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
+  <script type="module" src="../../../@polymer/iron-demo-helpers/demo-snippet.js"></script>
+  <script type="module" src="../../../@polymer/iron-form/iron-form.js"></script>
+  <script type="module" src="../paper-checkbox.js"></script>
+
   <custom-style>
     <style is="custom-style" include="demo-pages-shared-styles">
     paper-checkbox {
@@ -26,8 +27,8 @@
     <demo-snippet class="centered-demo">
       <template>
         <paper-checkbox>Checkbox</paper-checkbox>
-        <paper-checkbox checked>Checkbox</paper-checkbox>
-        <paper-checkbox disabled>Disabled</paper-checkbox>
+        <paper-checkbox checked="">Checkbox</paper-checkbox>
+        <paper-checkbox disabled="">Disabled</paper-checkbox>
       </template>
     </demo-snippet>
 
@@ -37,7 +38,7 @@
         <iron-form id="form">
           <form is="iron-form">
             <paper-checkbox name="subscribe" value="newsletetr">Subsceribe to our newsletter</paper-checkbox>
-            <paper-checkbox name="tems" value="accepted" checked>Agree to terms and conditions</paper-checkbox>
+            <paper-checkbox name="tems" value="accepted" checked="">Agree to terms and conditions</paper-checkbox>
           </form>
         </iron-form>
         <button onclick="submitForm()">Submit</button>
